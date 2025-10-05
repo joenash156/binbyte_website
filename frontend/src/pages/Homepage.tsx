@@ -1,8 +1,17 @@
+import HomepageHeroSection from "../components/homepage/HomepageHeroSection";
+import WhyUs from "../components/homepage/WhyUs";
+
 function Homepage() {
-  
-  return(
-    <>
-    </>
+
+  return (
+    <div>
+      <HomepageHeroSection />
+
+      <div className="">
+        <WhyUs />
+      </div>
+
+    </div>
   );
 }
 

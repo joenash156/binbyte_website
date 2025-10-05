@@ -31,10 +31,15 @@ function Header() {
             {/* Mobile Hamburger Menu - Hidden on md and above */}
             <button
               onClick={toggleMobileMenu}
-              className="md:hidden text-white hover:bg-blue-800 py-2 px-3 cursor-pointer rounded-lg focus:outline-none transition-all duration-200"
+              className="md:hidden text-white hover:bg-blue-800 py-2 px-2 cursor-pointer rounded-lg focus:outline-none transition-all duration-200 borde"
               aria-label="Toggle menu"
             >
-              <i className={`${isMobileMenuOpen ? "fas fa-times" : "fas fa-bars"} text-2xl`}></i>
+              {/* <i className={`${isMobileMenuOpen ? "fas fa-times" : "fas fa-bars"} text-2xl`}></i> */}
+              <div className="flex flex-col space-y-1.5">
+                <div className={`${isMobileMenuOpen ? "rotate-45 translate-y-2 " : ""} transition-all ease-in-out duration-300 w-7 h-1 rounded-lg bg-gray-100`}></div>
+                <div className={`${isMobileMenuOpen ? "opacity-0 translate-x-2" : "opacity-100"} transition-all ease-in-out duration-300 w-7 h-1 rounded-lg bg-gray-100`}></div>
+                <div className={`${isMobileMenuOpen ? "-rotate-45 -translate-y-2 " : ""} transition-all ease-in-out duration-300 w-7 h-1 rounded-lg bg-gray-100`}></div>
+              </div>
             </button>
 
             {/* Logo and Company Name */}
