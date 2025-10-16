@@ -40,7 +40,7 @@ function Header() {
             {/* Mobile Hamburger Menu - Hidden on md and above */}
             <button
               onClick={toggleMobileMenu}
-              className="md:hidden text-white hover:bg-blue-800 py-2 px-2 cursor-pointer rounded-lg focus:outline-none transition-all duration-200 borde"
+              className="md:hidden text-white hover:bg-blue-800 py-2 px-2 cursor-pointer rounded-lg focus:outline-none transition-all duration-200"
               aria-label="Toggle menu"
             >
               {/* <i className={`${isMobileMenuOpen ? "fas fa-times" : "fas fa-bars"} text-2xl`}></i> */}

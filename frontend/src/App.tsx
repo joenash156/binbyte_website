@@ -10,6 +10,7 @@ import ScrollTop from "./components/ScrollTop"
 import TeamMember from "./pages/TeamMember"
 import Learners from "./pages/Learners"
 import Projects from "./pages/Projects"
+import LearnerPage from "./pages/LearnerPage"
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/team/:id" element={<TeamMember />} />
           <Route path="/learners" element={<Learners />} />
+          <Route path="/learner/:id" element={<LearnerPage />} />
           <Route path="/projects" element={<Projects />} />
         </Route>
       </Routes>

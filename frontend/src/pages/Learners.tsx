@@ -47,7 +47,7 @@ function Learners() {
       skills: ["FastAPI", "Python", "PostgreSQL", "Git"],
       socials: {
         linkedin: "https://linkedin.com/in/joshua-adjei",
-        github: "https://github.com/joshua-adjei",
+        github: "https://github.com/joenash156",
         email: "mailto:joenash156@gmail.com"
       }
     },
@@ -219,7 +219,7 @@ function Learners() {
         </div>
 
         {/* Search and Filter Bar */}
-        <div className="bg-blue-50/20 rounded-2xl p-6 mb-8">
+        <div className="bg-blue-50/20 rounded-2xl mb:p-6 mb-8">
           <div className="flex flex-col md:flex-row gap-4 items-stretch md:items-center">
             {/* Search Bar */}
             <div className="flex-1 relative">
