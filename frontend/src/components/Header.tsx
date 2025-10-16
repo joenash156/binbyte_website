@@ -3,10 +3,16 @@ import Logo from "../assets/logo/binbyte-logo.jpg";
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMoreDropdownOpen, setIsMoreDropdownOpen] = useState(false);
   const headerRef = useRef<HTMLHeadElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const toggleMoreDropdown = () => {
+    setIsMoreDropdownOpen(!isMoreDropdownOpen);
   };
 
   useEffect(() => {
@@ -14,13 +20,16 @@ function Header() {
       if (headerRef.current && !headerRef.current.contains(event.target as Node) && isMobileMenuOpen) {
         setIsMobileMenuOpen(false);
       }
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node) && isMoreDropdownOpen) {
+        setIsMoreDropdownOpen(false);
+      }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [isMobileMenuOpen]);
+  }, [isMobileMenuOpen, isMoreDropdownOpen]);
 
   return (
     <header ref={headerRef} className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 shadow-lg fixed right-0 left-0 top-0 z-50">
@@ -81,17 +90,55 @@ function Header() {
               <i className="fas fa-envelope"></i>
               <span>CONTACT US</span>
             </a>
+
+            {/* More Dropdown */}
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={toggleMoreDropdown}
+                className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200"
+              >
+                <i className="fas fa-plus"></i>
+                <span>MORE</span>
+                <i className={`fas fa-chevron-down transition-transform duration-200 ${isMoreDropdownOpen ? 'rotate-180' : ''}`}></i>
+              </button>
+
+              {/* Dropdown Menu */}
+              <div className={`absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-200 ${isMoreDropdownOpen
+                  ? 'opacity-100 visible transform translate-y-0'
+                  : 'opacity-0 invisible transform -translate-y-2'
+                }`}>
+                <div className="py-2">
+                  <a
+                    href="/learners"
+                    className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+                    onClick={() => setIsMoreDropdownOpen(false)}
+                  >
+                    <i className="fas fa-graduation-cap text-blue-500"></i>
+                    <span className="font-medium">LEARNERS</span>
+                  </a>
+                  <a
+                    href="/projects"
+                    className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+                    onClick={() => setIsMoreDropdownOpen(false)}
+                  >
+                    <i className="fas fa-project-diagram text-blue-500"></i>
+                    <span className="font-medium">PROJECTS</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </nav>
         </div>
 
         {/* Mobile Navigation Menu */}
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen
-            ? "max-h-48 opacity-100 pb-4"
+            ? "max-h-96 opacity-100 pb-4"
             : "max-h-0 opacity-0 overflow-hidden"
             }`}
         >
           <nav className="flex flex-col space-y-2 pt-4 border-t border-blue-800">
+            {/* Main Navigation Links */}
             <a
               href="/"
               className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200"
@@ -115,6 +162,30 @@ function Header() {
             >
               <i className="fas fa-envelope w-5"></i>
               <span>CONTACT US</span>
+            </a>
+
+            {/* Separator */}
+            <div className="border-t border-blue-700 my-2"></div>
+            <div className="px-4 py-2">
+              <span className="text-blue-300 text-xs font-semibold uppercase tracking-wider">More Links</span>
+            </div>
+
+            {/* Additional Links */}
+            <a
+              href="/learners"
+              className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <i className="fas fa-graduation-cap w-5"></i>
+              <span>LEARNERS</span>
+            </a>
+            <a
+              href="/projects"
+              className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <i className="fas fa-project-diagram w-5"></i>
+              <span>PROJECTS</span>
             </a>
           </nav>
         </div>

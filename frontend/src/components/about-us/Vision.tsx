@@ -2,16 +2,19 @@ import VisionImg from "../../assets/other-images/our-vision-img.png";
 
 function Vision() {
   return (
-    <section className="py-16 lg:py-24 md:px-16 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-16 lg:py-24 md:px-16 bg-gradient-to-br from-gray-50 to-blue-50" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content - Order 2 on mobile, 1 on lg */}
           <div className="order-2 lg:order-1 space-y-6">
             <div className="space-y-4">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight flex items-center gap-3">
+                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-purple-100 shadow">
+                  <i className="fas fa-eye text-purple-600 text-2xl"></i>
+                </span>
                 Our
-                <span className="text-purple-600 block">Vision</span>
-              </h2>
+                <span className="text-blue-600 block">Vision</span>
+                </h2>
               <div className="w-20 h-1 bg-purple-600 rounded-full"></div>
             </div>
 
@@ -21,7 +24,7 @@ function Vision() {
               innovative solutions that shape our future.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-4" data-aos="fade-up">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
                   <i className="fas fa-rocket text-purple-600 text-xl"></i>
@@ -53,7 +56,7 @@ function Vision() {
               </div>
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4" data-aos="fade-up">
               <button className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
                 <i className="fas fa-eye"></i>
                 <span>See Our Vision in Action</span>

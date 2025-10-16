@@ -4,10 +4,10 @@ import WhyUs from "../components/homepage/WhyUs";
 function Homepage() {
 
   return (
-    <div>
+    <div data-aos="fade-up">
       <HomepageHeroSection />
 
-      <div className="">
+      <div className="" data-aos="fade-up">
         <WhyUs />
       </div>
 

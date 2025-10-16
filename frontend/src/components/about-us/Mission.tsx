@@ -2,7 +2,7 @@ import MissionImg from "../../assets/other-images/our-mission-img.png";
 
 function Mission() {
   return (
-    <section className="py-16 lg:py-24 md:px-16 bg-white">
+    <section className="py-16 lg:py-24 md:px-16 bg-white" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image - Order 1 on all devices */}
@@ -23,12 +23,16 @@ function Mission() {
           </div>
 
           {/* Text Content - Order 2 on all devices */}
-          <div className="order-2 space-y-6">
+          <div className="order-2 space-y-6" data-aos="fade-up">
             <div className="space-y-4">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight flex items-center gap-3">
+                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 shadow">
+                  <i className="fas fa-bullseye text-blue-600 text-2xl"></i>
+                </span>
                 Our
                 <span className="text-blue-600 block">Mission</span>
-              </h2>
+                </h2>
               <div className="w-20 h-1 bg-blue-600 rounded-full"></div>
             </div>
 

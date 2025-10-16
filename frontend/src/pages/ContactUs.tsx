@@ -4,7 +4,7 @@ import ContactUsForms from "../components/contact-us/ContactUsForms";
 
 function ContactUs() {
   return (
-    <>
+    <div data-aos="fade-up">
       <ContactUsHero />
       <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="container mx-auto px-4">
@@ -14,7 +14,7 @@ function ContactUs() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

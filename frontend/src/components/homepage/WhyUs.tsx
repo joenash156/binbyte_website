@@ -8,7 +8,7 @@ function WhyUs() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content - Order 2 on mobile, 1 on lg */}
-          <div className="order-2 lg:order-1 space-y-6">
+          <div className="order-2 lg:order-1 space-y-6" data-aos="fade-up">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Why Choose
@@ -23,7 +23,7 @@ function WhyUs() {
               students are industry-ready from day one.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-4" data-aos="fade-up">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                   <i className="fas fa-graduation-cap text-blue-600 text-xl"></i>
@@ -55,7 +55,7 @@ function WhyUs() {
               </div>
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4" data-aos="fade-up">
               <Link to="/about-us" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 w-2/3">
                 <i className="fas fa-arrow-right"></i>
                 <span>Learn more</span>
