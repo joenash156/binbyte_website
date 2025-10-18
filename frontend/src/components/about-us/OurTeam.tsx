@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import JoshuaImg from "../../assets/team-members/joshua.jpg";
 import FrancisImg from "../../assets/team-members/francis.jpg";
+import SamuelImg from "../../assets/team-members/samuel-img.jpg";
+import CourageImg from "../../assets/team-members/courage.jpg";
 
 function OurTeam() {
   const teamMembers = [
@@ -19,28 +21,28 @@ function OurTeam() {
     },
     {
       id: 2,
-      name: "Samuel Antwi",
+      name: "Samuel Kojo Anafi Antwi",
       position: "Project Lead Coordinator",
-      image: null,
+      image: SamuelImg || null,
       expertise: "UI/UX Design",
       socials: {
-        linkedin: "https://www.linkedin.com/in/samuel-antwi-123456",
+        linkedin: "https://www.linkedin.com/in/samuel-kojo-anafi-antwi",
         instagram: "https://www.instagram.com/samuel_antwi/",
-        github: "https://github.com/samuel-antwi",
-        email: "mailto:samuel.antwi@example.com"
+        github: "https://github.com/samuelantwi103",
+        email: "mailto:samuelantwi103@gmail.com"
       }
     },
     {
       id: 3,
-      name: "Attikpo Courage",
+      name: "Courage Xoese Attikpo",
       position: "Backend Lead Coordinator",
-      image: null,
+      image: CourageImg || null,
       expertise: "Backend Development",
       socials: {
         linkedin: "https://www.linkedin.com/in/attikpo-courage-123456",
-        instagram: "https://www.instagram.com/attikpo_courage/",
-        github: "https://github.com/attikpo-courage",
-        email: "mailto:attikpo.courage@example.com"
+        //instagram: "https://www.instagram.com/attikpo_courage/",
+        github: "https://github.com/attikpocourage",
+        email: "mailto:attikpocourage33@gmail.com"
       }
     },
     {
@@ -50,7 +52,7 @@ function OurTeam() {
       image: JoshuaImg || null,
       expertise: "Fullstack Development",
       socials: {
-        linkedin: "https://www.linkedin.com/in/joshua-adjei-123456",
+        linkedin: "https://www.linkedin.com/in/joshua-adjei-30b108275",
         instagram: "https://www.instagram.com/joshua_adjei/",
         github: "https://github.com/joenash156",
         email: "mailto:joshua.adjei@ashesi.edu.gh"

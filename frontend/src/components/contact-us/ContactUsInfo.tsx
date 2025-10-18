@@ -86,12 +86,7 @@ function ContactUsInfo() {
           >
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a
-            href="#"
-            className="w-10 h-10 bg-blue-400 hover:bg-blue-500 text-white rounded-lg flex items-center justify-center transition-colors duration-200"
-          >
-            <i className="fab fa-twitter"></i>
-          </a>
+          
           <a
             href="#"
             className="w-10 h-10 bg-blue-700 hover:bg-blue-800 text-white rounded-lg flex items-center justify-center transition-colors duration-200"

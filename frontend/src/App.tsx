@@ -11,6 +11,7 @@ import TeamMember from "./pages/TeamMember"
 import Learners from "./pages/Learners"
 import Projects from "./pages/Projects"
 import LearnerPage from "./pages/LearnerPage"
+import ProjectPage from "./pages/ProjectPage"
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/learners" element={<Learners />} />
           <Route path="/learner/:id" element={<LearnerPage />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectPage />} />
         </Route>
       </Routes>
     </>
