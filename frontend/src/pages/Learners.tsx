@@ -24,6 +24,11 @@ interface Learner {
 }
 
 function Learners() {
+
+  useEffect(() => {
+    document.title = "BinByte Technologies | Learners";
+  }, []);
+
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedType, setSelectedType] = useState("all");
   const [currentSlide, setCurrentSlide] = useState(0);

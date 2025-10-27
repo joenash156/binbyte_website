@@ -17,6 +17,11 @@ interface Project {
 }
 
 function Projects() {
+
+  useEffect(() => {
+    document.title = "BinByte Technologies | Projects";
+  }, []);
+
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedStatus, setSelectedStatus] = useState("all");

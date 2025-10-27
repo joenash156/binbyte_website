@@ -32,6 +32,11 @@ interface ProjectData {
 }
 
 function ProjectPage() {
+
+  useEffect(() => {
+    document.title = "BinByte Technologies | Project Details";
+  }, []);
+
   const { id } = useParams();
   const navigate = useNavigate();
   const [project, setProject] = useState<ProjectData | null>(null);

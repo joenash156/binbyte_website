@@ -1,6 +1,12 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function PrivacyPolicy() {
+
+  useEffect(() => {
+    document.title = "BinByte Technologies | Privacy Policy";
+  }, []);
+
   const navigate = useNavigate();
 
   return (

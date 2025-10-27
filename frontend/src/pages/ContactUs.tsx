@@ -1,8 +1,14 @@
 import ContactUsHero from "../components/contact-us/ContactUsHero";
 import ContactUsInfo from "../components/contact-us/ContactUsInfo";
 // import ContactUsForms from "../components/contact-us/ContactUsForms";
+import { useEffect } from "react";
 
 function ContactUs() {
+
+  useEffect(() => {
+    document.title = "BinByte Technologies | Contact Us";
+  }, []);
+
   return (
     <div data-aos="fade-up">
       <ContactUsHero />

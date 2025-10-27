@@ -32,6 +32,11 @@ interface TeamMemberData {
 }
 
 function TeamMember() {
+
+  useEffect(() => {
+    document.title = "BinByte Technologies | Team Member Profile";
+  }, []);
+
   const { id } = useParams();
   const navigate = useNavigate();
   const [member, setMember] = useState<TeamMemberData | null>(null);

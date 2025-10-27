@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function TermsAndConditions() {
+
+  useEffect(() => {
+    document.title = "BinByte Technologies | Terms and Conditions";
+  }, []);
+
   const navigate = useNavigate();
 
   return (

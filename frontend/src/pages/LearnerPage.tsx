@@ -31,6 +31,11 @@ interface LearnerData {
 }
 
 function LearnerPage() {
+
+  useEffect(() => {
+    document.title = "BinByte Technologies | Learner Profile";
+  }, []);
+
   const { id } = useParams();
   const navigate = useNavigate();
   const [learner, setLearner] = useState<LearnerData | null>(null);
