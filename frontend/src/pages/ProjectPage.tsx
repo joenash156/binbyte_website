@@ -7,6 +7,10 @@ import JoshuaImg from "../assets/team-members/joshua.jpg";
 import FrancisImg from "../assets/team-members/francis.jpg";
 import CourageImg from "../assets/team-members/courage.jpg";
 import Logo from "../assets/logo/binbyte-logo.jpg";
+import SamuelImg from "../assets/team-members/samuel-img.jpg";
+import SedemImg from "../assets/hero-images/homepage-hero-img1.jpg";
+import LutherImg from "../assets/hero-images/luther.jpg";
+import SeyramImg from "../assets/hero-images/homepage-hero-img4.jpg";
 
 interface ProjectData {
   id: number;
@@ -63,8 +67,9 @@ function ProjectPage() {
       ],
       teamMembers: [
         { id: 1, name: "Francis Serwor", role: "Backend Developer", type: "team", image: FrancisImg || null },
-        { id: 2, name: "Joshua Adjei", role: "Frontend Developer", type: "team", image: JoshuaImg || null },
-        { id: 3, name: "Courage Attikpo", role: "Backend Developer", type: "team", image: CourageImg || null }
+        { id: 2, name: "Samuel Kojo Anafi Antwi", role: "Frontend Developer", type: "team", image: SamuelImg || null },
+        { id: 4, name: "Joshua Adjei", role: "Frontend Developer", type: "team", image: JoshuaImg || null },
+        { id: 3, name: "Courage Attikpo", role: "Backend Developer", type: "team", image: CourageImg || null },
       ],
       duration: "5 months (ongoing)",
     },
@@ -113,8 +118,7 @@ function ProjectPage() {
         "Educational resources about prosthetic technology"
       ],
       teamMembers: [
-        { id: 3, name: "Emily Rodriguez", role: "Project Lead", type: "team" },
-        { id: 4, name: "David Thompson", role: "Frontend Developer", type: "team" }
+        { id: 4, name: "Joshua Adjei", role: "Frontend Developer", type: "team", image: JoshuaImg || null },
       ],
       duration: "3 months",
       completionDate: "September 2025"
@@ -130,7 +134,6 @@ function ProjectPage() {
       githubLink: "https://github.com/binbyte/scholars-nexus",
       technologies: ["TypeScript", "FastAPI", "TailwindCSS", "PostgreSQL", "React", "Redux"],
       features: [
-        "AI-powered opportunity matching algorithm",
         "Personalized student dashboards",
         "Application tracking and deadline reminders",
         "Document management and storage",
@@ -138,9 +141,14 @@ function ProjectPage() {
         "Integration with educational institutions"
       ],
       teamMembers: [
-        { id: 1, name: "Joshua Adjei", role: "Backend Developer", type: "learner" },
-        { id: 2, name: "Sedem K", role: "Full Stack Developer", type: "learner" },
-        { id: 5, name: "John Maxwell Luther", role: "Backend Developer", type: "learner" }
+        { id: 1, name: "Francis Serwor", role: "Backend Developer", type: "team", image: FrancisImg || null },
+        { id: 2, name: "Samuel Kojo Anafi Antwi", role: "Frontend Developer", type: "team", image: SamuelImg || null },
+        { id: 4, name: "Joshua Adjei", role: "Frontend Developer", type: "team", image: JoshuaImg || null },
+        { id: 2, name: "Sedem Kporvi", role: "Backend Developer", type: "learner", image: SedemImg || null },
+        { id: 5, name: "John Maxwell Luther", role: "Backend Developer", type: "learner", image: LutherImg || null },
+        { id: 3, name: "Courage Attikpo", role: "Backend Developer", type: "team", image: CourageImg || null },
+        { id: 3, name: "Seyram Letsu", role: "Backend Developer", type: "learner", image: SeyramImg || null },
+
       ],
       duration: "3 months (ongoing)"
     },
@@ -161,7 +169,7 @@ function ProjectPage() {
         "Team member profiles with expertise highlights",
       ],
       teamMembers: [
-        { id: 1, name: "Joshua Adjei", role: "Lead Frontend Developer", type: "learner", image: JoshuaImg || null },
+        { id: 4, name: "Joshua Adjei", role: "Frontend Developer", type: "team", image: JoshuaImg || null },
       ],
       duration: "1 month",
       completionDate: "October 2025"
