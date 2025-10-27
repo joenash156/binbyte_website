@@ -6,6 +6,7 @@ import SONImg from "../assets/other-images/son-logo.png";
 import JoshuaImg from "../assets/team-members/joshua.jpg";
 import FrancisImg from "../assets/team-members/francis.jpg";
 import CourageImg from "../assets/team-members/courage.jpg";
+import Logo from "../assets/logo/binbyte-logo.jpg";
 
 interface ProjectData {
   id: number;
@@ -60,33 +61,33 @@ function ProjectPage() {
         { id: 2, name: "Joshua Adjei", role: "Frontend Developer", type: "team", image: JoshuaImg || null },
         { id: 3, name: "Courage Attikpo", role: "Backend Developer", type: "team", image: CourageImg || null }
       ],
-      duration: "6 months",
+      duration: "5 months (ongoing)",
     },
-    {
-      id: 2,
-      name: "Scholars Opportunity Nexus API",
-      category: "api",
-      status: "completed",
-      image: null,
-      description: "API providing real-time opportunity data to students.",
-      fullDescription: "The Scholars Opportunity Nexus API is a robust RESTful service that aggregates and provides real-time access to scholarship opportunities, internships, and academic programs for students. The API serves as a central hub for educational opportunities, making it easier for students to discover and apply for programs that match their profiles and aspirations.",
-      githubLink: "https://github.com/binbyte/son-api",
-      technologies: ["FastAPI", "PostgreSQL", "Redis", "JWT", "Docker"],
-      features: [
-        "RESTful API with comprehensive documentation",
-        "Real-time opportunity updates and notifications",
-        "Advanced search and filtering capabilities",
-        "User authentication and authorization",
-        "Rate limiting and caching for optimal performance",
-        "Webhook support for third-party integrations"
-      ],
-      teamMembers: [
-        { id: 1, name: "Joshua Adjei", role: "Lead Backend Developer", type: "learner" },
-        { id: 5, name: "John Maxwell Luther", role: "Backend Developer", type: "learner" }
-      ],
-      duration: "4 months",
-      completionDate: "December 2024"
-    },
+    // {
+    //   id: 2,
+    //   name: "Scholars Opportunity Nexus API",
+    //   category: "api",
+    //   status: "completed",
+    //   image: null,
+    //   description: "API providing real-time opportunity data to students.",
+    //   fullDescription: "The Scholars Opportunity Nexus API is a robust RESTful service that aggregates and provides real-time access to scholarship opportunities, internships, and academic programs for students. The API serves as a central hub for educational opportunities, making it easier for students to discover and apply for programs that match their profiles and aspirations.",
+    //   githubLink: "https://github.com/binbyte/son-api",
+    //   technologies: ["FastAPI", "PostgreSQL", "Redis", "JWT", "Docker"],
+    //   features: [
+    //     "RESTful API with comprehensive documentation",
+    //     "Real-time opportunity updates and notifications",
+    //     "Advanced search and filtering capabilities",
+    //     "User authentication and authorization",
+    //     "Rate limiting and caching for optimal performance",
+    //     "Webhook support for third-party integrations"
+    //   ],
+    //   teamMembers: [
+    //     { id: 1, name: "Joshua Adjei", role: "Lead Backend Developer", type: "learner" },
+    //     { id: 5, name: "John Maxwell Luther", role: "Backend Developer", type: "learner" }
+    //   ],
+    //   duration: "4 months",
+    //   completionDate: "December 2024"
+    // },
     {
       id: 3,
       name: "3D Limbworks",
@@ -111,7 +112,7 @@ function ProjectPage() {
         { id: 4, name: "David Thompson", role: "Frontend Developer", type: "team" }
       ],
       duration: "3 months",
-      completionDate: "November 2024"
+      completionDate: "September 2025"
     },
     {
       id: 4,
@@ -136,32 +137,29 @@ function ProjectPage() {
         { id: 2, name: "Sedem K", role: "Full Stack Developer", type: "learner" },
         { id: 5, name: "John Maxwell Luther", role: "Backend Developer", type: "learner" }
       ],
-      duration: "8 months (ongoing)"
+      duration: "3 months (ongoing)"
     },
     {
       id: 5,
-      name: "Donect API",
-      category: "api",
-      status: "ongoing",
-      image: null,
-      description: "API for providing real-time data for donors who want to contribute, and communities in need.",
-      fullDescription: "The Donect API powers the Donect platform by providing secure, scalable backend services for donation management, community verification, and real-time data synchronization. Built with performance and security in mind, this API handles all critical operations including payment processing, user authentication, and data analytics.",
-      githubLink: "https://github.com/binbyte/donect-api",
-      technologies: ["FastAPI", "PostgreSQL", "Celery", "Redis", "Stripe API", "JWT"],
+      name: "BinByte Technologies",
+      category: "website",
+      status: "completed",
+      image: Logo || null,
+      description: "Website for BinByte Technologies, showcasing our services, projects and wonderful team.",
+      fullDescription: "The BinByte Technologies website serves as a comprehensive platform to showcase our innovative solutions, team expertise, and successful projects. With a focus on user experience and accessibility, the site provides detailed information about our services, case studies, and a blog featuring industry insights.",
+      websiteLink: "https://binbyte.tech/",
+      githubLink: "https://github.com/joenash156/binbyte_website",
+      technologies: ["TypeScript", "TailwindCSS"],
       features: [
-        "Secure payment gateway integration",
-        "Real-time donation processing and tracking",
-        "Community verification workflows",
-        "Advanced analytics and reporting endpoints",
-        "Webhook notifications for events",
-        "Comprehensive API documentation with Swagger"
+        "Responsive design for optimal viewing on all devices",
+        "Detailed service and project showcases",
+        "Team member profiles with expertise highlights",
       ],
       teamMembers: [
-        { id: 1, name: "Joshua Adjei", role: "Lead Backend Developer", type: "learner" },
-        { id: 3, name: "Seyram Letsu", role: "Backend Developer", type: "learner" },
-        { id: 2, name: "Michael Chen", role: "Technical Advisor", type: "team" }
+        { id: 1, name: "Joshua Adjei", role: "Lead Frontend Developer", type: "learner", image: JoshuaImg || null },
       ],
-      duration: "5 months (ongoing)"
+      duration: "1 month",
+      completionDate: "October 2025"
     }
   ];
 

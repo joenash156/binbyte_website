@@ -4,6 +4,7 @@ import SedemImg from "../assets/hero-images/homepage-hero-img1.jpg";
 import LutherImg from "../assets/hero-images/luther.jpg";
 import JoshuaImg from "../assets/hero-images/homepage-hero-img3.jpg";
 import SeyramImg from "../assets/hero-images/homepage-hero-img4.jpg";
+import EnochImg from "../assets/hero-images/enoch-img.jpg";
 
 
 
@@ -44,76 +45,76 @@ function Learners() {
       type1: "backend",
       type2: "",
       image: JoshuaImg || null,
-      skills: ["FastAPI", "Python", "PostgreSQL", "Git"],
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
       socials: {
         linkedin: "https://linkedin.com/in/joshua-adjei",
         github: "https://github.com/joenash156",
-        email: "mailto:joenash156@gmail.com"
+        email: "joenash156@gmail.com"
       }
     },
     {
       id: 2,
-      name: "Sedem K",
+      name: "Sedem Kporvi",
       type1: "backend",
-      type2: "web development",
+      type2: "mobile development",
       image: SedemImg || null,
-      skills: ["FastAPI", "Python", "PostgreSQL", "Git"],
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
       socials: {
-        linkedin: "https://linkedin.com/in/sedem-k",
-        github: "https://github.com/sedem-k",
-        instagram: "https://instagram.com/sedem_k"
+        linkedin: "https://www.linkedin.com/in/sedem-kporvi",
+        github: "https://github.com/sedemkporvi",
+        email: "sedemkporvi50@gmail.com"
       }
     },
     {
       id: 3,
       name: "Seyram Letsu",
       type1: "backend",
-      type2: "flutter",
+      type2: "mobile development",
       image: SeyramImg || null,
-      skills: ["FastAPI", "Dart", "PostgreSQL", "Git"],
+      skills: ["FastAPI", "Dart", "PostgreSQL", "Git & Github"],
       socials: {
         linkedin: "https://www.linkedin.com/in/seyram-letsu",
         github: "https://github.com/seyramletsu555-web",
         email: "seyramletsu555@gmail.com"
       }
     },
-    {
-      id: 4,
-      name: "David Surname",
-      type1: "flutter",
-      type2: "backend",
-      image: null,
-      skills: ["Flutter", "Dart", "Firebase", "Mobile UI"],
-      socials: {
-        linkedin: "https://linkedin.com/in/david-wilson",
-        github: "https://github.com/david-wilson",
-        instagram: "https://instagram.com/david_wilson"
-      }
-    },
+    // {
+    //   id: 4,
+    //   name: "David Surname",
+    //   type1: "mobile development",
+    //   type2: "backend",
+    //   image: null,
+    //   skills: ["mobile development", "Dart", "Firebase", "Mobile UI"],
+    //   socials: {
+    //     linkedin: "https://linkedin.com/in/david-wilson",
+    //     github: "https://github.com/david-wilson",
+    //     instagram: "https://instagram.com/david_wilson"
+    //   }
+    // },
     {
       id: 5,
       name: "John Maxwell Luther",
       type1: "backend",
-      type2: "web development",
+      type2: "",
       image: LutherImg || null,
-      skills: ["FastAPI", "Machine Learning", "PostgreSQL", "Git"],
+      skills: ["FastAPI", "Machine Learning", "PostgreSQL", "Git & Github"],
       socials: {
         linkedin: "https://www.linkedin.com/in/john-maxwell-luther",
         github: "https://github.com/Maxwell1560",
-        email: "mailto:john@example.com"
+        email: "john@example.com"
       }
     },
     {
       id: 6,
-      name: "James Emmanuel ",
+      name: "Enoch Tetteh Nartey ",
       type1: "backend",
-      type2: "web development",
-      image: null,
-      skills: ["FastAPI", "Python", "PostgreSQL", "Git"],
+      type2: "",
+      image: EnochImg || null,
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
       socials: {
-        linkedin: "https://linkedin.com/in/james-anderson",
-        github: "https://github.com/james-anderson",
-        instagram: "https://instagram.com/james_anderson"
+        linkedin: "https://www.linkedin.com/in/enoch-tetteh-nartey",
+        github: "https://github.com/Enoch130?tab=repositories",
+        email: "enochnartey130@gmail.com"
       }
     }
   ], []);
@@ -128,13 +129,13 @@ function Learners() {
 
   const getTypeColor = (type: string) => {
     switch (type) {
-      case "frontend":
-        return "bg-blue-100 text-blue-800";
+      // case "frontend":
+      //   return "bg-blue-100 text-blue-800";
       case "backend":
         return "bg-green-100 text-green-800";
       case "web development":
         return "bg-purple-100 text-purple-800";
-      case "flutter":
+      case "mobile development":
         return "bg-orange-100 text-orange-800";
       default:
         return "bg-gray-100 text-gray-800";
@@ -143,13 +144,13 @@ function Learners() {
 
   const getTypeIcon = (type: string) => {
     switch (type) {
-      case "frontend":
-        return "fas fa-palette";
+      // case "frontend":
+      //   return "fas fa-palette";
       case "backend":
         return "fas fa-server";
       case "web development":
         return "fas fa-globe";
-      case "flutter":
+      case "mobile development":
         return "fas fa-mobile-alt";
       default:
         return "fas fa-code";
@@ -243,10 +244,10 @@ function Learners() {
                 className="w-full md:w-auto appearance-none border border-gray-300 rounded-lg px-4 py-3 pr-8 focus:ring-2 focus:outline-none focus:ring-blue-500 focus:border-transparent transition-all duration-200 cursor-pointer"
               >
                 <option value="all">All Types</option>
-                <option value="frontend">Frontend</option>
+                {/* <option value="frontend">Frontend</option> */}
                 <option value="backend">Backend</option>
                 <option value="web development">Web Development</option>
-                <option value="flutter">Flutter</option>
+                <option value="mobile development">Mobile Development</option>
               </select>
               <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                 <i className="fas fa-chevron-down text-gray-400"></i>
@@ -355,7 +356,7 @@ function Learners() {
                     )}
                     {learner.socials.email && (
                       <a
-                        href={learner.socials.email}
+                        href={`mailto:${learner.socials.email}`}
                         className="text-gray-500 hover:text-red-600 transition-colors duration-200"
                       >
                         <i className="fas fa-envelope fa-lg"></i>

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import DonectImg from "../assets/other-images/donect-img.jpg";
 import LimbsImg from "../assets/other-images/3d_limbworks-img.jpg";
 import SONImg from "../assets/other-images/son-logo.png";
+import Logo from "../assets/logo/binbyte-logo.jpg";
 
 interface Project {
   id: number;
@@ -23,7 +24,7 @@ function Projects() {
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 10;
 
-  const heroImages = [DonectImg, LimbsImg, SONImg];
+  const heroImages = [DonectImg, LimbsImg, SONImg, Logo];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -44,15 +45,15 @@ function Projects() {
       websiteLink: "https://donect.is-great.org/",
       technologies: ["React", "FastAPI", "TailwindCSS", "PostgreSQL"]
     },
-    {
-      id: 2,
-      name: "Scholars Opportunity Nexus API",
-      category: "api",
-      status: "completed",
-      image: null,
-      description: "API providing real-time opportunity data to students.",
-      technologies: ["FastAPI", "PostgreSQL"]
-    },
+    // {
+    //   id: 2,
+    //   name: "Scholars Opportunity Nexus API",
+    //   category: "api",
+    //   status: "completed",
+    //   image: null,
+    //   description: "API providing real-time opportunity data to students.",
+    //   technologies: ["FastAPI", "PostgreSQL"]
+    // },
     {
       id: 3,
       name: "3D Limbworks",
@@ -75,12 +76,13 @@ function Projects() {
     },
     {
       id: 5,
-      name: "Donect API",
-      category: "api",
-      status: "ongoing",
-      image: null,
-      description: "API for providing real-time data for donors who want to contribute, and communities in need.",
-      technologies: ["FastAPI", "PostgreSQL"]
+      name: "BinByte Technologies",
+      category: "website",
+      status: "completed",
+      image: Logo || null,
+      description: "Website for BinByte Technologies, showcasing our services, projects and wonderful team.",
+      websiteLink: "https://binbyte.tech/",
+      technologies: ["TypeScript", "TailwindCSS"]
     },
   ];
 
@@ -159,7 +161,7 @@ function Projects() {
 
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center px-4">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 animate-bounce">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3">
               Our Amazing
               <span className="block text-blue-600">Projects</span>
             </h1>
@@ -222,7 +224,7 @@ function Projects() {
               >
                 <option value="all">All Categories</option>
                 <option value="website">Website</option>
-                <option value="api">API</option>
+                {/* <option value="api">API</option> */}
                 <option value="mobile app">Mobile App</option>
               </select>
               <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">

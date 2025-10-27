@@ -43,10 +43,10 @@ function TeamMember() {
       position: "President & CEO",
       image: FrancisImg,
       expertise: "Mobile Application Development, Business Strategy",
-      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      bio: "I strongly believe in the power of taking initiative. Driven by this desire, I make good use of every opportunity to project this value to others around me. Through teamwork and commitment, problems in the world will stop escalating. I seek an environment that will help nurture my values and skills to finally hone them into a profitable outcome for the environment and teams I find myself in.",
       experience: "2 years in software development and business leadership",
       education: "BSC Computer Engineering, Ashesi University",
-      skills: ["Flutter", "Python", "FastAPI", "Dart", "Leadership", "Backend Development", "Mobile UI/UX"],
+      skills: ["Flutter", "Python", "FastAPI", "Dart", "Leadership", "Backend Development", "JavaScript", "Mobile UI/UX", "React", "PostgreSQL", "MySQL", "Java", "Docker", "DevOps & Deployment"],
       achievements: ["Founded developers startup", "Mentored 10+ developers", "Developed 10+ mobile apps"],
       projects: [
         {
@@ -66,9 +66,9 @@ function TeamMember() {
         "Establish partnerships with about 10 companies"
       ],
       socials: {
-        linkedin: "https://linkedin.com/in/francis-sewor",
-        github: "https://github.com/francis-sewor",
-        email: "mailto:francis@binbyte.tech"
+        linkedin: "https://www.linkedin.com/in/sewor-francis-kwame",
+        github: "https://github.com/FrancisSimple",
+        email: "mailto:franciskwamesewor@gmail.com"
       }
     },
     {
@@ -79,8 +79,8 @@ function TeamMember() {
       expertise: "UI/UX Design, Figma",
       bio: "I am a computer engineering student with a strong passion for software engineering and I am looking forward to becoming a well rounded software developer. I envision bringing on board innovative solutions which will have a lasting impact wherever I go.",
       experience: "2 years in UI/UX design and frontend development",
-      education: "BSC Computer Engineering, <School>",
-      skills: ["Figma", "Git", "Dart", "Flutter", "MongoDB", "PostgresSQL"],
+      education: "BSC Computer Engineering, University of Ghana, Legon",
+      skills: ["Figma", "Git", "Dart", "Flutter", "MongoDB", "PostgresSQL", "UI/UX Design"],
       achievements: ["Designed scalable interface for couple of web applications", "Tutored learners in frontend mobile applications", "Developed web applications"],
       projects: [
         {
@@ -148,11 +148,11 @@ function TeamMember() {
       position: "Frontend Lead Coordinator",
       image: JoshuaImg,
       expertise: "Frontend Development and Tutoring",
-      bio: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+      bio: "I am a passionate IT Support Specialist and a web developer who enjoys creating dynamic and functional web applications. My main focus is on frontend development, where I design user interfaces that ensure smooth interaction between users and the application. I love solving real-world problems through code, building tools that are efficient, scalable, and user-centered. Whether it’s developing responsive layouts, connecting to APIs, or optimizing performance, I’m driven by the challenge of making technology work seamlessly to improve user experience.",
       experience: "2 years in web app development and design",
       education: "BS Computer Science, Ashesi University",
       skills: ["React", "JavaScript", "PHP", "Express.js", "Database Management", "IT Support", "TypeScript"],
-      achievements: ["Built 5+ web apps", "Google Support Specialist Certificate", "Mentored 15+ students"],
+      achievements: ["Built 5+ web apps", "Google Support Specialist Certificate", "Mentored 3+ students"],
       projects: [
         {
           name: "Donect",
@@ -164,6 +164,12 @@ function TeamMember() {
           name: "Scholars Opportunity Nexus",
           description: "Web application for discovering scholarship opportunities",
           category: "website"
+        },
+        {
+          name: "BinByte Technologies Website",
+          description: "Website for BinByte Technologies, showcasing our services, projects and wonderful team.",
+          category: "website",
+          link: "https://binbyte.tech/"
         }
       ],
       futureGoals: [
@@ -179,37 +185,32 @@ function TeamMember() {
     },
     {
       id: 5,
-      name: "Lisa Wang",
-      position: "Marketing Director",
+      name: "Bemjamin Gottah",
+      position: "Frontend Lead Coordinator",
       image: null,
-      expertise: "Digital Marketing, Brand Strategy",
+      expertise: "Frontend Development, Web Application Design, Graphic Design",
       bio: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
-      experience: "7+ years in digital marketing and brand management",
-      education: "MBA Marketing, Harvard Business School",
-      skills: ["Digital Marketing", "SEO/SEM", "Content Strategy", "Analytics", "Brand Management", "Social Media"],
+      experience: "2+ years in frontend development and design",
+      education: "BSc Computer Science, <School>",
+      skills: ["Web Development", "Graphic Design", "UI/UX Design"],
       achievements: ["Grew brand awareness by 300%", "Google Ads certified", "Marketing Campaign of the Year"],
       projects: [
         {
-          name: "BinByte Brand Redesign",
-          description: "Complete brand identity and digital presence overhaul",
+          name: "Scholars Opportunity Nexus",
+          description: "Web application for discovering scholarship opportunities",
           category: "website"
-        },
-        {
-          name: "Social Media Growth Campaign",
-          description: "Multi-platform campaign reaching 1M+ users",
-          category: "marketing"
         }
       ],
       futureGoals: [
-        "Launch influencer marketing program for tech education",
-        "Establish BinByte as top-of-mind tech training brand",
-        "Create viral content series on programming careers"
+        "Master advanced frontend frameworks and libraries",
+        "Create innovative web applications that enhance user experience",
+        "Collaborate on open-source projects to contribute to the developer community"
       ],
       socials: {
-        linkedin: "https://linkedin.com/in/lisa-wang",
-        github: "https://github.com/lisa-wang",
-        email: "mailto:lisa@binbyte.tech",
-        instagram: "https://instagram.com/lisa_wang"
+        linkedin: "https://www.linkedin.com/in/benjamin-gottah-123456",
+        instagram: "https://www.instagram.com/benjamin_gottah/",
+        github: "https://github.com/benjamin-gottah",
+        email: "mailto:benjamin.gottah@binbyte.tech"
       }
     }
   ];

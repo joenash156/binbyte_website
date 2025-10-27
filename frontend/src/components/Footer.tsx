@@ -1,16 +1,16 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo/binbyte-logo.jpg";
 
 function Footer() {
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle newsletter subscription
-    console.log("Newsletter signup:", email);
-    setEmail("");
-  };
+  // const handleNewsletterSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Handle newsletter subscription
+  //   console.log("Newsletter signup:", email);
+  //   setEmail("");
+  // };
 
   return (
     <footer className="bg-[#04011a] text-white">
@@ -30,12 +30,12 @@ function Footer() {
               Empowering individuals and organizations through cutting-edge programming education and innovative software solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-blue-300 hover:text-white transition-colors duration-200">
+              {/* <a href="#" className="text-blue-300 hover:text-white transition-colors duration-200">
                 <i className="fab fa-facebook-f text-lg"></i>
               </a>
               <a href="#" className="text-blue-300 hover:text-white transition-colors duration-200">
                 <i className="fab fa-instagram text-lg"></i>
-              </a>
+              </a> */}
               <a href="#" className="text-blue-300 hover:text-white transition-colors duration-200">
                 <i className="fab fa-linkedin-in text-lg"></i>
               </a>
@@ -55,9 +55,9 @@ function Footer() {
               <Link to="/about-us" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
                 About Us
               </Link>
-              <Link to="/services" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
+              {/* <Link to="/services" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
                 Services
-              </Link>
+              </Link> */}
               <Link to="/contact-us" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
                 Contact Us
               </Link>
@@ -68,17 +68,17 @@ function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Our Services</h3>
             <nav className="flex flex-col space-y-2">
-              <Link to="/training" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
+              {/* <Link to="/training" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
                 Programming Training
+              </Link> */}
+              <Link to="/about-us" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
+                Our Team
               </Link>
-              <Link to="/web-development" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
-                Web Development
+              <Link to="/projects" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
+                Our Projects
               </Link>
-              <Link to="/mobile-apps" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
-                Mobile Applications
-              </Link>
-              <Link to="/consulting" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
-                Tech Consulting
+              <Link to="/learners" className="text-blue-200 hover:text-white transition-colors duration-200 text-sm">
+                Learners
               </Link>
             </nav>
           </div>
@@ -86,10 +86,10 @@ function Footer() {
           {/* Newsletter */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Stay Updated</h3>
-            <p className="text-blue-200 text-sm">
+            {/* <p className="text-blue-200 text-sm">
               Subscribe to our newsletter for the latest updates and tech insights.
-            </p>
-            <form onSubmit={handleNewsletterSubmit} className="space-y-3">
+            </p> */}
+            {/* <form onSubmit={handleNewsletterSubmit} className="space-y-3">
               <div className="flex">
                 <input
                   type="email"
@@ -106,7 +106,7 @@ function Footer() {
                   <i className="fas fa-paper-plane"></i>
                 </button>
               </div>
-            </form>
+            </form> */}
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm text-blue-200">
                 <i className="fas fa-envelope w-4"></i>
@@ -114,7 +114,7 @@ function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-sm text-blue-200">
                 <i className="fas fa-phone w-4"></i>
-                <span>+1 (555) 123-4567</span>
+                <span>+233 (0) 25 659 1970</span>
               </div>
             </div>
           </div>
@@ -130,11 +130,11 @@ function Footer() {
               Privacy Policy
             </Link>
             <Link to="/terms" className="text-blue-300 hover:text-white transition-colors duration-200">
-              Terms of Service
+              Terms & Conditions
             </Link>
-            <Link to="/cookies" className="text-blue-300 hover:text-white transition-colors duration-200">
+            {/* <Link to="/cookies" className="text-blue-300 hover:text-white transition-colors duration-200">
               Cookie Policy
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

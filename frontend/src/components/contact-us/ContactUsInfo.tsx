@@ -19,12 +19,12 @@ function ContactUsInfo() {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-1">Call Us</h3>
             <a
-              href="tel:+15551234567"
+              href="tel:+233256591970"
               className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
             >
-              +1 (555) 123-4567
+              +233 (0) 25 659 1970
             </a>
-            <p className="text-gray-500 text-sm mt-1">Mon - Fri, 9AM - 6PM EST</p>
+            <p className="text-gray-500 text-sm mt-1">Mon - Sat, 9AM - 9PM GMT</p>
           </div>
         </div>
 
@@ -53,9 +53,9 @@ function ContactUsInfo() {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-1">Visit Us</h3>
             <p className="text-gray-600">
-              123 Tech Street<br />
-              Innovation District<br />
-              San Francisco, CA 94105
+              1 University Avenue<br />
+              Ashesi University<br />
+              Berekuso, Eastern Region, Ghana
             </p>
           </div>
         </div>
@@ -69,8 +69,8 @@ function ContactUsInfo() {
             <h3 className="text-lg font-semibold text-gray-900 mb-1">Working Hours</h3>
             <div className="text-gray-600 space-y-1">
               <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-              <p>Saturday: 10:00 AM - 4:00 PM</p>
-              <p>Sunday: Closed</p>
+              <p>Saturday: 10:00 AM - 6:00 PM</p>
+              <p>Sunday: 3:00 PM - 8:00 PM</p>
             </div>
           </div>
         </div>
@@ -80,12 +80,12 @@ function ContactUsInfo() {
       <div className="pt-6 border-t border-gray-200">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Follow Us</h3>
         <div className="flex space-x-4">
-          <a
+          {/* <a
             href="#"
             className="w-10 h-10 bg-blue-600 hover:bg-blue-700 text-white rounded-lg flex items-center justify-center transition-colors duration-200"
           >
             <i className="fab fa-facebook-f"></i>
-          </a>
+          </a> */}
           
           <a
             href="#"

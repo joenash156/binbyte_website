@@ -56,12 +56,12 @@ function Vision() {
               </div>
             </div>
 
-            <div className="pt-4" data-aos="fade-up">
+            {/* <div className="pt-4" data-aos="fade-up">
               <button className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
                 <i className="fas fa-eye"></i>
                 <span>See Our Vision in Action</span>
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Image - Order 1 on mobile, 2 on lg */}

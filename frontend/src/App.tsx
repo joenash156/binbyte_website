@@ -12,6 +12,8 @@ import Learners from "./pages/Learners"
 import Projects from "./pages/Projects"
 import LearnerPage from "./pages/LearnerPage"
 import ProjectPage from "./pages/ProjectPage"
+import PrivacyPolicy from "./pages/PrivacyPolicy"
+import TermsAndConditions from "./pages/TermsAndConditions"
 
 function App() {
   useEffect(() => {
@@ -34,6 +36,8 @@ function App() {
           <Route path="/learner/:id" element={<LearnerPage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/:id" element={<ProjectPage />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
         </Route>
       </Routes>
     </>

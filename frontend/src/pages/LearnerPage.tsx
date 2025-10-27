@@ -4,6 +4,7 @@ import SedemImg from "../assets/hero-images/homepage-hero-img1.jpg";
 import LutherImg from "../assets/hero-images/luther.jpg";
 import JoshuaImg from "../assets/hero-images/homepage-hero-img3.jpg";
 import SeyramImg from "../assets/hero-images/homepage-hero-img4.jpg";
+import EnochImg from "../assets/hero-images/enoch-img.jpg";
 
 interface LearnerData {
   id: number;
@@ -47,13 +48,23 @@ function LearnerPage() {
         github: "https://github.com/joenash156",
         email: "mailto:joenash156@gmail.com"
       },
-      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      bio: "I am a passionate IT Support Specialist and a web developer who enjoys creating dynamic and functional web applications. My main focus is on backend development and API integration, where I design systems that ensure smooth communication between different platforms. I love solving real-world problems through code, building tools that are efficient, scalable, and user-centered. Whether it’s developing secure server-side logic, connecting databases, or integrating third-party APIs, I’m driven by the challenge of making technology work seamlessly to improve user experience.",
       experience: "1 year in backend development",
       projects: [
         {
           name: "Scholars Opportunity Nexus API",
           description: "API providing real-time opportunity data to students.",
           category: "api",
+        },
+        {
+          name: "Donect Web Application",
+          description: "Web application connecting donors with students in need.",
+          category: "website",
+        },
+        {
+          name: "BinByte Technologies Website",
+          description: "Website showcasing the services and projects of BinByte Technologies.",
+          category: "website",
         }
       ],
       projectIdeas: [
@@ -63,17 +74,17 @@ function LearnerPage() {
     },
     {
       id: 2,
-      name: "Sedem K",
+      name: "Sedem Kporvi",
       type1: "backend",
-      type2: "flutter",
+      type2: "mobile development",
       image: SedemImg,
-      skills: ["FastAPI", "Python", "PostgreSQL", "Git", "Dart"],
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github", "Dart"],
       socials: {
-        linkedin: "https://linkedin.com/in/sedem-k",
-        github: "https://github.com/sedem-k",
-        email: "mailto:sedem_k@example.com"
+        linkedin: "https://www.linkedin.com/in/sedem-kporvi",
+        github: "https://github.com/sedemkporvi",
+        email: "mailto:sedemkporvi50@gmail.com"
       },
-      bio: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      bio: "Though an electrical and electronics engineering student, my passion for backend development has only increased since I joined Binbyte. Through BinByte, I’ve move from uncertainty to confidence, learning how to design databases and build functional APIs. I aim to keep growing into a versatile developer who builds solutions that truly make an impact.",
       experience: "1 year in APIs and mobile development",
       projects: [
         {
@@ -180,30 +191,30 @@ function LearnerPage() {
     },
     {
       id: 6,
-      name: "James Emmanuel",
+      name: "Enoch Tetteh Nartey",
       type1: "backend",
-      type2: "web development",
-      image: null,
-      skills: ["FastAPI", "Python", "PostgreSQL", "Git", "JavaScript", "Node.js"],
+      type2: "",
+      image: EnochImg || null,
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
       socials: {
-        linkedin: "https://linkedin.com/in/james-anderson",
-        github: "https://github.com/james-anderson",
-        instagram: "https://instagram.com/james_anderson"
+        linkedin: "https://linkedin.com/in/enoch-tetteh-nartey",
+        github: "https://github.com/Enoch130?tab=repositories",
+        email: "enochnartey130@gmail.com"
       },
-      bio: "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur.",
-      experience: "2+ years in full-stack development",
+      bio: "I have always been passionate about the use of technology in business. This inspired me to study Management Information Systems foundation in Ashesi University. I enjoy tackling technical challenges, learning new technologies, and collaborating with teams to bring ideas to life. My goal is to continue growing as a backend engineer while contributing to impactful projects that enhance user experience.",
+      experience: "Few months in backend development",
       projects: [
-        {
-          name: "Restaurant Booking System",
-          description: "Online reservation platform for restaurants",
-          category: "website",
-          link: "https://restaurant-booking.com"
-        },
-        {
-          name: "Payment Gateway Integration",
-          description: "Secure payment processing API",
-          category: "api",
-        }
+        // {
+        //   name: "Restaurant Booking System",
+        //   description: "Online reservation platform for restaurants",
+        //   category: "website",
+        //   link: "https://restaurant-booking.com"
+        // },
+        // {
+        //   name: "Payment Gateway Integration",
+        //   description: "Secure payment processing API",
+        //   category: "api",
+        // }
       ],
       projectIdeas: [
         "Marketplace for Freelancers",
@@ -236,7 +247,7 @@ function LearnerPage() {
 
   const getTypeColor = (type: string) => {
     switch (type) {
-      case "frontend": return "bg-blue-100 text-blue-800";
+      // case "frontend": return "bg-blue-100 text-blue-800";
       case "backend": return "bg-green-100 text-green-800";
       case "web development": return "bg-purple-100 text-purple-800";
       case "mobile development": return "bg-orange-100 text-orange-800";
@@ -252,7 +263,7 @@ function LearnerPage() {
           <img
             src={learner.image}
             alt={learner.name}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">

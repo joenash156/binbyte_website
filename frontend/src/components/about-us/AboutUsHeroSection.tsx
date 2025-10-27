@@ -31,13 +31,13 @@ function AboutUsHeroSection() {
         </p>
 
         {/* Optional Call-to-Action Button */}
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <button
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
           >
             Learn More About Our Mission
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Animated Scroll Down Button */}

@@ -11,12 +11,12 @@ function OurTeam() {
       name: "Francis Sewor",
       position: "President & CEO",
       image: FrancisImg || null,
-      expertise: "Backend Development, Business Strategy",
+      expertise: "Backend Development, Mobile Application Development, DevOps",
       socials: {
-        linkedin: "https://www.linkedin.com/in/francis-sewor-123456",
-        instagram: "https://www.instagram.com/francis_sewor/",
-        github: "https://github.com/francis-sewor",
-        email: "mailto:francis.sewor@ashesi.edu.gh"
+        linkedin: "https://www.linkedin.com/in/sewor-francis-kwame",
+        // instagram: "https://www.instagram.com/francis_sewor/",
+        github: "https://github.com/FrancisSimple",
+        email: "mailto:franciskwamesewor@gmail.com"
       }
     },
     {
@@ -50,7 +50,7 @@ function OurTeam() {
       name: "Joshua Adjei",
       position: "Frontend Lead Coordinator",
       image: JoshuaImg || null,
-      expertise: "Fullstack Development",
+      expertise: "Fullstack Development, IT Support Specialist",
       socials: {
         linkedin: "https://www.linkedin.com/in/joshua-adjei-30b108275",
         instagram: "https://www.instagram.com/joshua_adjei/",
@@ -142,9 +142,9 @@ function OurTeam() {
                         <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-700 transition-colors duration-200">
                           <i className="fab fa-linkedin fa-lg"></i>
                         </a>
-                        <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" className="bg-gray-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 bg-clip-text text-transparent transition-colors duration-200">
+                        {/* <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" className="bg-gray-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 bg-clip-text text-transparent transition-colors duration-200">
                           <i className="fab fa-instagram fa-lg"></i>
-                        </a>
+                        </a> */}
                         <a href={member.socials.github} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 transition-colors duration-200">
                           <i className="fab fa-github fa-lg"></i>
                         </a>

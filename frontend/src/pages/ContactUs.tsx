@@ -1,6 +1,6 @@
 import ContactUsHero from "../components/contact-us/ContactUsHero";
 import ContactUsInfo from "../components/contact-us/ContactUsInfo";
-import ContactUsForms from "../components/contact-us/ContactUsForms";
+// import ContactUsForms from "../components/contact-us/ContactUsForms";
 
 function ContactUs() {
   return (
@@ -10,7 +10,7 @@ function ContactUs() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <ContactUsInfo />
-            <ContactUsForms />
+            {/* <ContactUsForms /> */}
           </div>
         </div>
       </section>
