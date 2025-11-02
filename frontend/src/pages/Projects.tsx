@@ -86,7 +86,7 @@ function Projects() {
       status: "completed",
       image: Logo || null,
       description: "Website for BinByte Technologies, showcasing our services, projects and wonderful team.",
-      websiteLink: "https://binbyte.tech/",
+      websiteLink: "https://binbytetechnologies.netlify.app",
       technologies: ["TypeScript", "TailwindCSS"]
     },
   ];

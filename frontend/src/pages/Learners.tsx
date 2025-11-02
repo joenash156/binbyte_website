@@ -5,7 +5,9 @@ import LutherImg from "../assets/hero-images/luther.jpg";
 import JoshuaImg from "../assets/hero-images/homepage-hero-img3.jpg";
 import SeyramImg from "../assets/hero-images/homepage-hero-img4.jpg";
 import EnochImg from "../assets/hero-images/enoch-img.jpg";
-
+import OliviaImg from "../assets/hero-images/olivia-img.jpg";
+import KumiImg from "../assets/hero-images/kumi-img.jpg";
+import MiriamImg from "../assets/hero-images/miriam-img.jpg";
 
 
 interface Learner {
@@ -52,7 +54,7 @@ function Learners() {
       image: JoshuaImg || null,
       skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
       socials: {
-        linkedin: "https://linkedin.com/in/joshua-adjei",
+        linkedin: "https://www.linkedin.com/in/joshua-adjei-30b108275",
         github: "https://github.com/joenash156",
         email: "joenash156@gmail.com"
       }
@@ -83,19 +85,19 @@ function Learners() {
         email: "seyramletsu555@gmail.com"
       }
     },
-    // {
-    //   id: 4,
-    //   name: "David Surname",
-    //   type1: "mobile development",
-    //   type2: "backend",
-    //   image: null,
-    //   skills: ["mobile development", "Dart", "Firebase", "Mobile UI"],
-    //   socials: {
-    //     linkedin: "https://linkedin.com/in/david-wilson",
-    //     github: "https://github.com/david-wilson",
-    //     instagram: "https://instagram.com/david_wilson"
-    //   }
-    // },
+    {
+      id: 4,
+      name: "Olivia Aikins",
+      type1: "mobile development",
+      type2: "",
+      image: OliviaImg || null,
+      skills: ["Flutter", "Dart", "Microsoft Excel", "team management"],
+      socials: {
+        linkedin: "https://www.linkedin.com/in/olivia-aikins",
+        github: "https://github.com/OliviaAikins",
+        email: "aikinsolivia41@gmail.com"
+      }
+    },
     {
       id: 5,
       name: "John Maxwell Luther",
@@ -120,6 +122,32 @@ function Learners() {
         linkedin: "https://www.linkedin.com/in/enoch-tetteh-nartey",
         github: "https://github.com/Enoch130?tab=repositories",
         email: "enochnartey130@gmail.com"
+      }
+    },
+    {
+      id: 7,
+      name: "Kelvin Kumi Gyabaah",
+      type1: "mobile development",
+      type2: "",
+      image: KumiImg || null,
+      skills: ["Flutter", "Dart", "Git & Github"],
+      socials: {
+        linkedin: "https://www.linkedin.com/in/kelvin-kumi-gyabaah-7227242a7",
+        github: "https://github.com/KumiTech",
+        email: "gyabaahkelvin27@gmail.com"
+      }
+    },
+    {
+      id: 8,
+      name: "Miriam Wepiya Gale",
+      type1: "backend",
+      type2: "",
+      image: MiriamImg || null,
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
+      socials: {
+        linkedin: "https://www.linkedin.com/in/miriam-wgale",
+        github: "https://github.com/Mimi-cell-ash",
+        email: "gale.wepiya@gmail.com"
       }
     }
   ], []);

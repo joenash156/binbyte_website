@@ -5,6 +5,10 @@ import LutherImg from "../assets/hero-images/luther.jpg";
 import JoshuaImg from "../assets/hero-images/homepage-hero-img3.jpg";
 import SeyramImg from "../assets/hero-images/homepage-hero-img4.jpg";
 import EnochImg from "../assets/hero-images/enoch-img.jpg";
+import OliviaImg from "../assets/hero-images/olivia-img.jpg";
+import KumiImg from "../assets/hero-images/kumi-img.jpg";
+import MiriamImg from "../assets/hero-images/miriam-img.jpg";
+
 
 interface LearnerData {
   id: number;
@@ -137,29 +141,29 @@ function LearnerPage() {
     },
     {
       id: 4,
-      name: "David Surname",
-      type1: "flutter",
-      type2: "backend",
-      image: null,
-      skills: ["Flutter", "Dart", "Firebase", "Mobile UI", "REST APIs"],
+      name: "Olivia Aikins",
+      type1: "mobile development",
+      type2: "",
+      image: OliviaImg || null,
+      skills: ["Flutter", "Dart", "Microsoft Excel", "team management"],
       socials: {
-        linkedin: "https://linkedin.com/in/david-wilson",
-        github: "https://github.com/david-wilson",
-        instagram: "https://instagram.com/david_wilson"
+        linkedin: "https://www.linkedin.com/in/olivia-aikins",
+        github: "https://github.com/OliviaAikins",
+        email: "aikinsolivia41@gmail.com"
       },
-      bio: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.",
-      experience: "1+ year in mobile development",
+      bio: "My name is Olivia Aikins, currently pursuing a degree in Electrical Engineering at the Kwame Nkrumah University of Science and Technology (KNUST). Growing up in a community where teenage pregnancy is prevalent and education for girls is often neglected, I have always been motivated to change that narrative through my actions and achievements.I actively mentor young girls in my community, encouraging them to continue their education or learn vocational skills to become independent and confident. Through these initiatives, I aim to empower them to believe in their potential and make positive contributions to society.My passion for engineering stems from a desire to create innovative and practical solutions that can improve lives, especially in under-resourced communities. I aspire to work in an engineering role that combines technology and sustainability to drive development in Ghana and beyond, while continuing to advocate for girls’ empowerment and education.",
+      experience: "Few months in mobile development",
       projects: [
-        {
-          name: "Recipe Sharing App",
-          description: "Social platform for sharing recipes",
-          category: "mobile app",
-        }
+        // {
+        //   name: "Recipe Sharing App",
+        //   description: "Social platform for sharing recipes",
+        //   category: "mobile app",
+        // }
       ],
       projectIdeas: [
         "Travel Planning Assistant App",
         "Language Learning Game",
-        "Smart Home Control Application"
+        "Virtual Fitness Trainer"
       ]
     },
     {
@@ -226,7 +230,74 @@ function LearnerPage() {
         "Event Management Platform",
         "Customer Relationship Management System"
       ]
-    }
+    },
+    {
+      id: 7,
+      name: "Kelvin Kumi Gyabaah",
+      type1: "mobile development",
+      type2: "",
+      image: KumiImg || null,
+      skills: ["Flutter", "Dart", "Git & Github"],
+      socials: {
+        linkedin: "https://www.linkedin.com/in/kelvin-kumi-gyabaah-7227242a7",
+        github: "https://github.com/KumiTech",
+        email: "gyabaahkelvin27@gmail.com"
+      },
+      bio: "I am a tech enthusiast studying Computer Engineering at the University of Ghana, driven by curiosity and a passion for learning. I enjoy exploring how technology shapes the world around us and how engineering principles can be applied to solve real-life problems creatively and efficiently. I’m always eager to understand how things work and to think through challenges from multiple angles. I love experimenting with new ideas, learning from experience, and building innovative solutions that push the boundaries of what’s possible. My goal is to keep growing as a thinker and engineer, continuously improving myself and contributing to meaningful technological progress.",
+      experience: "Few months in mobile development",
+      projects: [
+        // {
+        //   name: "Restaurant Booking System",
+        //   description: "Online reservation platform for restaurants",
+        //   category: "website",
+        //   link: "https://restaurant-booking.com"
+        // },
+        // {
+        //   name: "Payment Gateway Integration",
+        //   description: "Secure payment processing API",
+        //   category: "api",
+        // }
+      ],
+      projectIdeas: [
+        "Fitness Tracking App",
+        "Recipe Sharing Platform",
+        "Local Event Finder"
+      ]
+    },
+    {
+      id: 8,
+      name: "Miriam Wepiya Gale",
+      type1: "backend",
+      type2: "",
+      image: MiriamImg || null,
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
+      socials: {
+        linkedin: "https://www.linkedin.com/in/miriam-wgale",
+        github: "https://github.com/Mimi-cell-ash",
+        email: "gale.wepiya@gmail.com"
+      },
+      bio: "I am a creative and driven individual passionate about health and technology, and I’m eager to learn how technology can bridge the gap between the two. Outside of tech, I’m a storyteller on Wattpad, where I enjoy expressing ideas and emotions through writing. My interest in coding began after WASSCE, and since then, I’ve been passionate about using it to solve real-world problems, particularly in the area of health. I’m also an aspiring entrepreneur with a business idea called Tote-ally Mimi, a brand that combines creativity, functionality, and empowerment.Joining this platform gave me the opportunity to translate what I learned in the classroom into practical skills. I’ve gained hands-on experience with tools and concepts such as Alembic, database models, and Pydantic models, as well as the use of Python, FastAPI, and PostgreSQL to develop efficient backend systems.  I also learned how to apply the PUT, GET, POST, and DELETE methods to perform database operations. This experience has strengthened my foundation in software development and deepened my motivation to keep learning and building impactful solutions.",
+      experience: "Few months in backend development",
+      projects: [
+        // {
+        //   name: "Restaurant Booking System",
+        //   description: "Online reservation platform for restaurants",
+        //   category: "website",
+        //   link: "https://restaurant-booking.com"
+        // },
+        // {
+        //   name: "Payment Gateway Integration",
+        //   description: "Secure payment processing API",
+        //   category: "api",
+        // }
+      ],
+      projectIdeas: [
+        "Inventory Management System",
+        "Online Learning Platform",
+        "Virtual Event Hosting Platform"
+      ]
+    },
+    
   ];
 
   useEffect(() => {

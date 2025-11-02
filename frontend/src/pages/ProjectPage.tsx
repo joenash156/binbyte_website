@@ -160,7 +160,7 @@ function ProjectPage() {
       image: Logo || null,
       description: "Website for BinByte Technologies, showcasing our services, projects and wonderful team.",
       fullDescription: "The BinByte Technologies website serves as a comprehensive platform to showcase our innovative solutions, team expertise, and successful projects. With a focus on user experience and accessibility, the site provides detailed information about our services, case studies, and a blog featuring industry insights.",
-      websiteLink: "https://binbyte.tech/",
+      websiteLink: "https://binbytetechnologies.netlify.app",
       githubLink: "https://github.com/joenash156/binbyte_website",
       technologies: ["TypeScript", "TailwindCSS"],
       features: [
