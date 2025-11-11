@@ -379,7 +379,7 @@ function TeamMember() {
           <div className="lg:col-span-2 space-y-6">
             {/* Bio */}
             <div className="bg-white rounded-2xl p-8" data-aos="fade-up">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+              <h2 className="sm:text-2xl font-bold text-gray-900 mb-4 flex items-center">
                 <i className="fas fa-user-circle text-blue-600 mr-3"></i>
                 <span>About&nbsp;</span><span className="text-blue-800">{member.name}</span>
               </h2>

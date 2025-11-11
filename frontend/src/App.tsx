@@ -14,6 +14,7 @@ import LearnerPage from "./pages/LearnerPage"
 import ProjectPage from "./pages/ProjectPage"
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import TermsAndConditions from "./pages/TermsAndConditions"
+import ApplyToLearn from "./pages/ApplyToLearn"
 
 function App() {
   useEffect(() => {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/project/:id" element={<ProjectPage />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="/apply-to-learn" element={<ApplyToLearn />} />
         </Route>
       </Routes>
     </>

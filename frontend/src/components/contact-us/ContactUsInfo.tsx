@@ -36,10 +36,10 @@ function ContactUsInfo() {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-1">Email Us</h3>
             <a
-              href="mailto:info@binbyte.tech"
+              href="mailto:binbytetech@gmail.com"
               className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
             >
-              info@binbyte.tech
+              binbytetech@gmail.com
             </a>
             <p className="text-gray-500 text-sm mt-1">We'll respond within 24 hours</p>
           </div>
@@ -86,9 +86,9 @@ function ContactUsInfo() {
           >
             <i className="fab fa-facebook-f"></i>
           </a> */}
-          
+
           <a
-            href="#"
+            href="https://www.linkedin.com/company/binbyte/" target="_blank"
             className="w-10 h-10 bg-blue-700 hover:bg-blue-800 text-white rounded-lg flex items-center justify-center transition-colors duration-200"
           >
             <i className="fab fa-linkedin-in"></i>

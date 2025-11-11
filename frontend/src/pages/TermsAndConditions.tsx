@@ -101,7 +101,7 @@ function TermsAndConditions() {
                       Monthly Fee
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
-                      Each member is required to contribute <span className="font-bold">GH₵ 10.00 (Ten Ghana Cedis)</span> monthly as a membership fee.
+                      Each member is required to contribute <span className="font-bold">GH₵ 20.00 (Twenty Ghana Cedis)</span> monthly as a membership fee.
                     </p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">

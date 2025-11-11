@@ -36,7 +36,7 @@ function Footer() {
               <a href="#" className="text-blue-300 hover:text-white transition-colors duration-200">
                 <i className="fab fa-instagram text-lg"></i>
               </a> */}
-              <a href="#" className="text-blue-300 hover:text-white transition-colors duration-200">
+              <a href="https://www.linkedin.com/company/binbyte/" target="_blank" className="text-blue-300 hover:text-white transition-colors duration-200">
                 <i className="fab fa-linkedin-in text-lg"></i>
               </a>
               <a href="#" className="text-blue-300 hover:text-white transition-colors duration-200">
@@ -110,7 +110,7 @@ function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm text-blue-200">
                 <i className="fas fa-envelope w-4"></i>
-                <span>info@binbyte.tech</span>
+                <span>binbytetech@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-blue-200">
                 <i className="fas fa-phone w-4"></i>

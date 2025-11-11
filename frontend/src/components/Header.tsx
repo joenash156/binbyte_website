@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Logo from "../assets/logo/binbyte-logo.jpg";
+import { Link } from "react-router";
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,69 +34,73 @@ function Header() {
 
   return (
     <header ref={headerRef} className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 shadow-lg fixed right-0 left-0 top-0 z-50">
-      <div className="container mx-auto px-2 md:px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Mobile: Hamburger + Logo Group, Desktop: Just Logo */}
-          <div className="flex items-center">
-            {/* Mobile Hamburger Menu - Hidden on md and above */}
+          <div className="flex items-center flex-1 min-w-0">
+            {/* Mobile Hamburger Menu - Hidden on lg and above */}
             <button
               onClick={toggleMobileMenu}
-              className="md:hidden text-white hover:bg-blue-800 py-2 px-2 cursor-pointer rounded-lg focus:outline-none transition-all duration-200"
+              className="lg:hidden text-white hover:bg-blue-800 py-2 px-2 cursor-pointer rounded-lg focus:outline-none transition-all duration-200 mr-2 flex-shrink-0"
               aria-label="Toggle menu"
             >
-              {/* <i className={`${isMobileMenuOpen ? "fas fa-times" : "fas fa-bars"} text-2xl`}></i> */}
               <div className="flex flex-col space-y-1.5">
-                <div className={`${isMobileMenuOpen ? "rotate-45 translate-y-2 " : ""} transition-all ease-in-out duration-300 w-7 h-1 rounded-lg bg-gray-100`}></div>
-                <div className={`${isMobileMenuOpen ? "opacity-0 translate-x-2" : "opacity-100"} transition-all ease-in-out duration-300 w-7 h-1 rounded-lg bg-gray-100`}></div>
-                <div className={`${isMobileMenuOpen ? "-rotate-45 -translate-y-2 " : ""} transition-all ease-in-out duration-300 w-7 h-1 rounded-lg bg-gray-100`}></div>
+                <div className={`${isMobileMenuOpen ? "rotate-45 translate-y-2 " : ""} transition-all ease-in-out duration-300 w-6 sm:w-7 h-0.5 sm:h-1 rounded-lg bg-gray-100`}></div>
+                <div className={`${isMobileMenuOpen ? "opacity-0 translate-x-2" : "opacity-100"} transition-all ease-in-out duration-300 w-6 sm:w-7 h-0.5 sm:h-1 rounded-lg bg-gray-100`}></div>
+                <div className={`${isMobileMenuOpen ? "-rotate-45 -translate-y-2 " : ""} transition-all ease-in-out duration-300 w-6 sm:w-7 h-0.5 sm:h-1 rounded-lg bg-gray-100`}></div>
               </div>
             </button>
 
             {/* Logo and Company Name */}
-            <a
-              href="/"
-              className="flex items-center space-x-3 p-2 rounded-lg"
+            <Link
+              to="/"
+              className="flex items-center space-x-2 sm:space-x-3 p-1 sm:p-2 rounded-lg flex-shrink-0"
             >
               <img
                 src={Logo}
                 alt="BinByte Technologies"
-                className="h-10 w-10 rounded-lg object-cover shadow-md"
+                className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg object-cover shadow-md flex-shrink-0"
               />
-              <span className="text-white font-bold text-lg md:text-xl">
-                BinByte Technologies
-              </span>
-            </a>
+              <div className="flex flex-col min-w-0">
+                <span className="company-name text-white font-bold text-base md:text-lg lg:text-xl xl:text-2xl leading-tight truncate">
+                  BinByte Technologies
+                </span>
+                <span className="slogan text-orange-200 text-[10px] sm:text-xs md:text-base leading-tight whitespace-nowrap overflow-hidden text-ellipsis max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-none">
+                  Empowering Individuals and Organizations.
+                </span>
+              </div>
+            </Link>
           </div>
 
-          {/* Desktop Navigation - Hidden on mobile */}
-          <nav className="hidden md:text-sm md:flex items-center space-x-2">
-            <a
-              href="/"
-              className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200"
+          {/* Desktop/Tablet Navigation - Hidden on mobile */}
+          <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2">
+            <Link
+              to="/"
+              className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-1.5 xl:space-x-2 px-2 xl:px-4 py-2 rounded-lg transition-all duration-200 text-xs xl:text-sm"
             >
               <i className="fas fa-home"></i>
               <span>HOME</span>
-            </a>
-            <a
-              href="/about-us"
-              className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200"
+            </Link>
+            <Link
+              to="/about-us"
+              className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-1.5 xl:space-x-2 px-2 xl:px-4 py-2 rounded-lg transition-all duration-200 text-xs xl:text-sm"
             >
               <i className="fas fa-info-circle"></i>
               <span>ABOUT US</span>
-            </a>
-            <a
-              href="/contact-us"
-              className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200"
+            </Link>
+            <Link
+              to="/contact-us"
+              className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-1.5 xl:space-x-2 px-2 xl:px-4 py-2 rounded-lg transition-all duration-200 text-xs xl:text-sm"
             >
               <i className="fas fa-envelope"></i>
               <span>CONTACT US</span>
-            </a>
+            </Link>
 
             {/* More Dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={toggleMoreDropdown}
-                className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200"
+                className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-1.5 xl:space-x-2 px-2 xl:px-4 py-2 rounded-lg transition-all duration-200 text-xs xl:text-sm"
               >
                 <i className="fas fa-plus"></i>
                 <span>MORE</span>
@@ -103,66 +108,74 @@ function Header() {
               </button>
 
               {/* Dropdown Menu */}
-              <div className={`absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-200 ${isMoreDropdownOpen
-                  ? 'opacity-100 visible transform translate-y-0'
-                  : 'opacity-0 invisible transform -translate-y-2'
+              <div className={`absolute top-full right-0 mt-2 w-48 xl:w-56 bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-200 ${isMoreDropdownOpen
+                ? 'opacity-100 visible transform translate-y-0'
+                : 'opacity-0 invisible transform -translate-y-2'
                 }`}>
                 <div className="py-2">
-                  <a
-                    href="/learners"
+                  <Link
+                    to="/learners"
                     className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
                     onClick={() => setIsMoreDropdownOpen(false)}
                   >
-                    <i className="fas fa-graduation-cap text-blue-500"></i>
-                    <span className="font-medium">LEARNERS</span>
-                  </a>
-                  <a
-                    href="/projects"
+                    <i className="fas fa-graduation-cap text-blue-500 w-5"></i>
+                    <span className="font-medium text-xs xl:text-sm">LEARNERS</span>
+                  </Link>
+                  <Link
+                    to="/projects"
                     className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
                     onClick={() => setIsMoreDropdownOpen(false)}
                   >
-                    <i className="fas fa-project-diagram text-blue-500"></i>
-                    <span className="font-medium">PROJECTS</span>
-                  </a>
+                    <i className="fas fa-project-diagram text-blue-500 w-5"></i>
+                    <span className="font-medium text-xs xl:text-sm">PROJECTS</span>
+                  </Link>
+                  <Link
+                    to="/apply-to-learn"
+                    className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-blue-50 whitespace-nowrap hover:text-blue-600 transition-colors duration-200"
+                    onClick={() => setIsMoreDropdownOpen(false)}
+                  >
+                    <i className="fas fa-file-signature text-blue-500 w-5"></i>
+                    <span className="font-medium text-xs xl:text-sm">APPLY TO LEARN</span>
+                  </Link>
                 </div>
               </div>
             </div>
           </nav>
         </div>
 
-        {/* Mobile Navigation Menu */}
+        {/* Mobile/Tablet Navigation Menu */}
         <div
-          className={`md:hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen
-            ? "max-h-96 opacity-100 pb-4"
+          className={`lg:hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen
+            ? "max-h-[500px] opacity-100 pb-4"
             : "max-h-0 opacity-0 overflow-hidden"
             }`}
         >
           <nav className="flex flex-col space-y-2 pt-4 border-t border-blue-800">
             {/* Main Navigation Links */}
-            <a
-              href="/"
+            <Link
+              to="/"
               className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <i className="fas fa-home w-5"></i>
-              <span>HOME</span>
-            </a>
-            <a
-              href="/about-us"
+              <i className="fas fa-home w-5 flex-shrink-0"></i>
+              <span className="text-sm sm:text-base">HOME</span>
+            </Link>
+            <Link
+              to="/about-us"
               className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <i className="fas fa-info-circle w-5"></i>
-              <span>ABOUT US</span>
-            </a>
-            <a
-              href="/contact-us"
+              <i className="fas fa-info-circle w-5 flex-shrink-0"></i>
+              <span className="text-sm sm:text-base">ABOUT US</span>
+            </Link>
+            <Link
+              to="/contact-us"
               className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <i className="fas fa-envelope w-5"></i>
-              <span>CONTACT US</span>
-            </a>
+              <i className="fas fa-envelope w-5 flex-shrink-0"></i>
+              <span className="text-sm sm:text-base">CONTACT US</span>
+            </Link>
 
             {/* Separator */}
             <div className="border-t border-blue-700 my-2"></div>
@@ -171,22 +184,30 @@ function Header() {
             </div>
 
             {/* Additional Links */}
-            <a
-              href="/learners"
+            <Link
+              to="/learners"
               className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <i className="fas fa-graduation-cap w-5"></i>
-              <span>LEARNERS</span>
-            </a>
-            <a
-              href="/projects"
+              <i className="fas fa-graduation-cap w-5 flex-shrink-0"></i>
+              <span className="text-sm sm:text-base">LEARNERS</span>
+            </Link>
+            <Link
+              to="/projects"
               className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <i className="fas fa-project-diagram w-5"></i>
-              <span>PROJECTS</span>
-            </a>
+              <i className="fas fa-project-diagram w-5 flex-shrink-0"></i>
+              <span className="text-sm sm:text-base">PROJECTS</span>
+            </Link>
+            <Link
+              to="/apply-to-learn"
+              className="text-white hover:bg-blue-800 hover:bg-opacity-50 flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <i className="fas fa-file-signature w-5 flex-shrink-0"></i>
+              <span className="text-sm sm:text-base">APPLY TO LEARN</span>
+            </Link>
           </nav>
         </div>
       </div>

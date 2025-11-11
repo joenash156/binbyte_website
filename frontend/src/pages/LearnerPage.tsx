@@ -466,7 +466,7 @@ function LearnerPage() {
           <div className="lg:col-span-2 space-y-6" data-aos="fade-up">
             {/* Bio */}
             <div className="bg-white rounded-2xl p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+              <h2 className="text-lg sm:text-2xl font-bold text-gray-900 mb-4 flex items-center">
                 <i className="fas fa-user-circle text-blue-600 mr-3"></i>
                 <span>About&nbsp;</span><span className="text-blue-800">{learner.name}</span>
               </h2>
