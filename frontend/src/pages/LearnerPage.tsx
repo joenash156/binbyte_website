@@ -8,6 +8,7 @@ import EnochImg from "../assets/hero-images/enoch-img.jpg";
 import OliviaImg from "../assets/hero-images/olivia-img.jpg";
 import KumiImg from "../assets/hero-images/kumi-img.jpg";
 import MiriamImg from "../assets/hero-images/miriam-img.jpg";
+import VannessaImg from "../assets/hero-images/vannessa-img.jpg";
 
 
 interface LearnerData {
@@ -295,6 +296,39 @@ function LearnerPage() {
         "Inventory Management System",
         "Online Learning Platform",
         "Virtual Event Hosting Platform"
+      ]
+    },
+    {
+      id: 9,
+      name: "Vannessa Brose",
+      type1: "backend",
+      type2: "",
+      image: VannessaImg || null,
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
+      socials: {
+        linkedin: " https://www.linkedin.com/in/vannessa-brose",
+        github: "https://github.com/Makaybrose",
+        email: "brosevannessa@gmail.com"
+      },
+      bio: "I am a Computer Science student with a deep curiosity for how technology can shape the future of science. Through BinByte, I have gained hands-on experience in backend development and now have a strong understanding of how databases work and connect to real-world applications. I am particularly fascinated by embryology and aspire to utilize my coding skills to develop innovative solutions that bridge technology and life sciences.",
+      experience: "Few months in backend development",
+      projects: [
+        // {
+        //   name: "Restaurant Booking System",
+        //   description: "Online reservation platform for restaurants",
+        //   category: "website",
+        //   link: "https://restaurant-booking.com"
+        // },
+        // {
+        //   name: "Payment Gateway Integration",
+        //   description: "Secure payment processing API",
+        //   category: "api",
+        // }
+      ],
+      projectIdeas: [
+        "Laboratory Information Management System",
+        "AI-Driven Drug Discovery Tool",
+        "Personalized Health Monitoring App"
       ]
     },
     

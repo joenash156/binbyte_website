@@ -43,7 +43,7 @@ function ApplyToLearn() {
       ],
       duration: "3-6 Months",
       level: "Beginner to Intermediate",
-      isAvailable: true,
+      isAvailable: false,
       unavailableMailLink: "mailto:binbytetech@gmail.com?subject=Kindly Notify Me About Backend Development Program&body=Hello BinByte Team,%0D%0A%0D%0AI would like to be notified when the Backend Development program becomes available.%0D%0A%0D%0AThank you!",
       googleFormLink: "https://forms.gle/tzgmupbnNfJiti4u7",
       color: {

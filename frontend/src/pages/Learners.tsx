@@ -8,6 +8,7 @@ import EnochImg from "../assets/hero-images/enoch-img.jpg";
 import OliviaImg from "../assets/hero-images/olivia-img.jpg";
 import KumiImg from "../assets/hero-images/kumi-img.jpg";
 import MiriamImg from "../assets/hero-images/miriam-img.jpg";
+import VannessaImg from "../assets/hero-images/vannessa-img.jpg";
 
 
 interface Learner {
@@ -148,6 +149,19 @@ function Learners() {
         linkedin: "https://www.linkedin.com/in/miriam-wgale",
         github: "https://github.com/Mimi-cell-ash",
         email: "gale.wepiya@gmail.com"
+      }
+    },
+    {
+      id: 9,
+      name: "Vannessa Brose",
+      type1: "backend",
+      type2: "",
+      image: VannessaImg || null,
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
+      socials: {
+        linkedin: "http://www.linkedin.com/in/vannessa-brose",
+        github: "https://github.com/Makaybrose",
+        email: "brosevannessa@gmail.com"
       }
     }
   ], []);
