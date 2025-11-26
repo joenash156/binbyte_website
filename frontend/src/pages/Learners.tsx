@@ -9,6 +9,7 @@ import OliviaImg from "../assets/hero-images/olivia-img.jpg";
 import KumiImg from "../assets/hero-images/kumi-img.jpg";
 import MiriamImg from "../assets/hero-images/miriam-img.jpg";
 import VannessaImg from "../assets/hero-images/vannessa-img.jpg";
+import AcheampongImg from "../assets/hero-images/acheampong-img.jpg";
 
 
 interface Learner {
@@ -162,6 +163,19 @@ function Learners() {
         linkedin: "http://www.linkedin.com/in/vannessa-brose",
         github: "https://github.com/Makaybrose",
         email: "brosevannessa@gmail.com"
+      }
+    },
+    {
+      id: 10,
+      name: "Acheampong Panin Darkwah",
+      type1: "backend",
+      type2: "",
+      image: AcheampongImg || null,
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
+      socials: {
+        linkedin: "http://www.linkedin.com/in/acheampong-darkwah",
+        github: "https://github.com/panindarkwah",
+        email: "panindarkwah@gmail.com"
       }
     }
   ], []);

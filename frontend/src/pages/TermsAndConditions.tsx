@@ -333,7 +333,7 @@ function TermsAndConditions() {
                 </div>
                 <div className="flex items-start">
                   <i className="fas fa-check-circle text-green-600 mr-3 mt-1 flex-shrink-0"></i>
-                  <p className="text-gray-700">I agree to make a non-refundable monthly contribution of GHC 10.00</p>
+                  <p className="text-gray-700">I agree to make a non-refundable monthly contribution of GHC 20.00</p>
                 </div>
                 <div className="flex items-start">
                   <i className="fas fa-check-circle text-green-600 mr-3 mt-1 flex-shrink-0"></i>

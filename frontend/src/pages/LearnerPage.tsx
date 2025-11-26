@@ -9,6 +9,7 @@ import OliviaImg from "../assets/hero-images/olivia-img.jpg";
 import KumiImg from "../assets/hero-images/kumi-img.jpg";
 import MiriamImg from "../assets/hero-images/miriam-img.jpg";
 import VannessaImg from "../assets/hero-images/vannessa-img.jpg";
+import AcheampongImg from "../assets/hero-images/acheampong-img.jpg";
 
 
 interface LearnerData {
@@ -329,6 +330,39 @@ function LearnerPage() {
         "Laboratory Information Management System",
         "AI-Driven Drug Discovery Tool",
         "Personalized Health Monitoring App"
+      ]
+    },
+    {
+      id: 10,
+      name: "Acheampong Panin Darkwah",
+      type1: "backend",
+      type2: "",
+      image: AcheampongImg || null,
+      skills: ["FastAPI", "Python", "PostgreSQL", "Git & Github"],
+      socials: {
+        linkedin: " https://www.linkedin.com/in/acheampong-darkwah",
+        github: "https://github.com/panindarkwah",
+        email: "panindarkwah@gmail.com"
+      },
+      bio: "I am Acheampong Panin Darkwah, a young individual seeking to acquire a deeper understanding of how software and AI inventions have emerged in our modern environment. My desire to understand how these systems are created has sparked my interest in pursuing a career in software development and AI research. My journey toward making this dream a reality has been shaped by logical and structured thinking. I am committed to building a solid foundation in software development, with a strong focus on clean code, scalability, and system reliability. I value the crucial role backend developers play in ensuring that applications function smoothly behind the scenes, and I aspire to contribute to meaningful real-world projects that will positively impact the nation. I consider myself inquisitive, disciplined, and ready to take on challenges as I continue to improve each day.",
+      experience: "Few months in backend development",
+      projects: [
+        // {
+        //   name: "Restaurant Booking System",
+        //   description: "Online reservation platform for restaurants",
+        //   category: "website",
+        //   link: "https://restaurant-booking.com"
+        // },
+        // {
+        //   name: "Payment Gateway Integration",
+        //   description: "Secure payment processing API",
+        //   category: "api",
+        // }
+      ],
+      projectIdeas: [
+        "AI-Powered Code Review Tool",
+        "Predictive Analytics Dashboard",
+        "Automated Content Generation System"
       ]
     },
     
